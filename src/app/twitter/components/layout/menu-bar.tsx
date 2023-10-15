@@ -1,12 +1,12 @@
 import ButtonHeader from '@/app/twitter/components/ui/button-header'
 import ButtonLogo from '@/app/twitter/components/ui/button-logo'
-import HomeIcon from '@/assets/home-icon.svg'
-import SearchIcon from '@/assets/search-icon.svg'
-import LogoTwitter from '@/assets/twitter.svg'
+import HomeIcon from '@/assets/icon/home-icon.svg'
+import SearchIcon from '@/assets/icon/search-icon.svg'
+import LogoTwitter from '@/assets/icon/twitter.svg'
 
 function MainHeader() {
   return (
-    <div>
+    <div className='fixed'>
       <div className="w-[52px] h-[52px] mt-[3px]">
         <ButtonLogo link="/">
           <LogoTwitter />

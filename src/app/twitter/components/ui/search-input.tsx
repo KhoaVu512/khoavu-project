@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react'
-import SearchSmall from 'assets/search-small.svg'
+import SearchSmall from 'assets/icon/search-small.svg'
 
 function SearchInput(props: PropsWithChildren) {
   return (

@@ -1,11 +1,11 @@
-import MainHome from '@/app/twitter/components/layout/main-home'
-import MainTrending from '@/app/twitter/components/layout/main-trending'
+import FeedPage from '@/app/twitter/feed/page'
+import Trending from '@/app/twitter/components/layout/trending'
 
 function Twitter() {
   return (
-    <main className='flex w-[990px]'>
-      <MainHome></MainHome>
-      <MainTrending></MainTrending>
+    <main className='flex w-[990px] relative'>
+      <FeedPage /> 
+      <Trending />
     </main>
   )
 }

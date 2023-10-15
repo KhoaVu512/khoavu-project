@@ -1,6 +1,5 @@
 'use client'
 
-import TwitterLogo from 'assets/home-icon.svg'
 import Link from 'next/link'
 import { PropsWithChildren } from 'react'
 interface Props {

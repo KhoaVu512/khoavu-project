@@ -8,11 +8,46 @@ function Trending() {
         tab="Trending in VietNam"
         trending="Ngon"
         quantity="1.29M"
-      /> 
+      />
       <TrendingItem
         tab="Trending in world"
         trending="Hams"
         quantity="29k"
+      />{' '}
+      <TrendingItem
+        tab="Trending in world"
+        trending="Hams"
+        quantity="29k"
+      />{' '}
+      <TrendingItem
+        tab="Trending in world"
+        trending="Hams"
+        quantity="29k"
+      />{' '}
+      <TrendingItem
+        tab="Trending in world"
+        trending="Hams"
+        quantity="29k"
+      />{' '}
+      <TrendingItem
+        tab="Trending in world"
+        trending="Hams"
+        quantity="29k"
+      />{' '}
+      <TrendingItem
+        tab="Trending in world"
+        trending="Hams"
+        quantity="29k"
+      />
+      <TrendingItem
+        tab="Trending in VietNam"
+        trending="Ngon"
+        quantity="1.29M"
+      />
+      <TrendingItem
+        tab="Trending in VietNam"
+        trending="Ngon"
+        quantity="1.29M"
       />
       <div className="flex h-[52px] w-full items-center">
         <div className="ml-6 text-blue-400">Show more</div>

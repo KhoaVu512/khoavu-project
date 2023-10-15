@@ -1,4 +1,4 @@
-import SettingIcon from '@/assets/setting-icon.svg'
+import SettingIcon from '@/assets/icon/setting-icon.svg'
 
 interface Props {
   tab: string,
