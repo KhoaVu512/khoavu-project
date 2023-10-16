@@ -1,7 +1,7 @@
 function Pots() {
   return (
     <div className="">
-      <div className="w-full flex my-4">
+      <div className="w-full flex mt-4 mb-1">
         <div className="flex rounded-full mx-4  w-[calc(100% - 4px)] h-[calc(100% - 4px)] mr-4">
           <img
             src="/images/avatar-demo1.png"
@@ -26,7 +26,7 @@ function Pots() {
           <img
             src="/images/avatar-demo1.png"
             alt={'avatar user'}
-            className="w-[95%] mt-6"
+            className="w-[95%] mt-6 rounded-2xl"
           />
         </div>
       </div>

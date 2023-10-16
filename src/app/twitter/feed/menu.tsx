@@ -1,3 +1,4 @@
+import NewPost from '@/app/twitter/feed/new-post'
 import Link from 'next/link'
 
 function MenuFeed() {
@@ -13,6 +14,8 @@ function MenuFeed() {
         <div className="w-[50%] flex justify-center font-bold ">For you</div>
         <div className="w-[50%] justify-center flex font-bold">Follow</div>
       </div>
+
+
     </div>
   )
 }
