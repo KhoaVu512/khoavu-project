@@ -1,0 +1,54 @@
+.like-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.heart-icon {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  background-image:url( 'https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+  background-position: left;
+  background-repeat:no-repeat;
+  background-size:2900%;
+  position: absolute;
+}
+
+
+.heart-bg {
+  background: rgba(255, 192, 200, 0);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 100ms ease;
+}
+
+.heart-bg:hover {
+  background: rgba(255, 192, 200, 0.7);
+}
+
+.likes-amount {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #888;
+  font-weight: 900;
+  margin-left: 6px;
+}
+
+.heart-icon.liked {
+  animation: like-anim 0.7s steps(28) forwards;
+}
+
+@keyframes like-anim {
+  to {
+    background-position: right;
+  }
+}
+
+.likes-amount.liked {
+  color: red;
+}

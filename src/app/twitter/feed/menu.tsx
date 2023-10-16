@@ -9,9 +9,9 @@ function MenuFeed() {
         </div>
       </Link>
 
-      <div className="flex justify-center items-center h-[53px] w-full border-b-[1px]">
-        <div className="w-[50%] flex justify-center">For you</div>
-        <div className="w-[50%] justify-center flex ">Follow</div>
+      <div className="flex justify-center items-center h-[53px] w-full border-b-[1px] border-[#2f3336]">
+        <div className="w-[50%] flex justify-center font-bold ">For you</div>
+        <div className="w-[50%] justify-center flex font-bold">Follow</div>
       </div>
     </div>
   )
