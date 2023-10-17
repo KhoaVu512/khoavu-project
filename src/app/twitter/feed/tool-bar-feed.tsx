@@ -6,10 +6,10 @@ function ToolBar() {
   return (
     <div className='ml-[72px] mr-12'>
       <div className='flex justify-between'>
-      <CommentPost />
-      <RePost />
+      <CommentPost width={16} height={18} textSize={13}/>
+      <RePost width={16} height={18} textSize={13}/>
       <Like />
-      <RePost />
+      <RePost width={16} height={18} textSize={13}/>
       </div>
      
     </div>

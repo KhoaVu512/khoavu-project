@@ -3,7 +3,13 @@ import CommentIcon from '@/assets/icon/comment-icon.svg'
 import { Popover, Typography } from '@mui/material'
 import { useState } from 'react'
 
-function CommentPost() {
+interface Props {
+  width: number,
+  height: number,
+  textSize: number
+}
+
+function CommentPost(Props: Props) {
   const [countRePost, setCountRePost] = useState(0)
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
@@ -39,8 +45,8 @@ function CommentPost() {
       aria-describedby={id} onClick={handleClick}
     >
       <div className="cursor-pointer flex">
-        <CommentIcon className="hover:fill-violet-600" />
-        <div className="text-[13px] ml-1 ">{countRePost}</div>
+        <CommentIcon className="hover:fill-violet-600 " height={Props.height} width={Props.width}/>
+        <div className={`text-[${Props.textSize}px] ml-1`}>{countRePost}</div>
       </div>
 
       

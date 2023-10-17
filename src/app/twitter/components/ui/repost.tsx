@@ -4,7 +4,13 @@ import CommentIcon from '@/assets/icon/comment-icon.svg'
 import { Popover, Typography } from '@mui/material'
 import { useState } from 'react'
 
-function RePost() {
+interface Props {
+  width: number
+  height: number,
+  textSize: number
+}
+
+function RePost(Props: Props) {
   const [countRePost, setCountRePost] = useState(0)
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null)
 
@@ -35,7 +41,7 @@ function RePost() {
           horizontal: 'center',
         }}
       >
-        <div className=' bg-black w-24 h-16 justify-center flex flex-col items-center'>
+        <div className=" bg-black w-24 h-16 justify-center flex flex-col items-center">
           <div className="text-white">Repost</div>
           <div className="text-white">quote</div>
         </div>
@@ -47,8 +53,8 @@ function RePost() {
         onClick={handleClick}
       >
         <div className="cursor-pointer flex">
-          <RePostIcon className="hover:fill-violet-600" />
-          <div className="text-[13px] ml-1 ">{countRePost}</div>
+          <RePostIcon className="hover:fill-violet-600" height={Props.height} width={Props.width}/>
+          <div className={`text-[${Props.textSize}px] ml-1`}>{countRePost}</div>
         </div>
       </button>
     </div>
