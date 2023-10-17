@@ -13,7 +13,7 @@ function NewPots() {
         <img
           src="/images/avatar-demo1.png"
           alt={'avatar user'}
-          className="w-[42px] h-[40px] rounded-full"
+          className="w-[47px] h-[40px] rounded-full"
         />
       </div>
       <div className="flex flex-col w-full">

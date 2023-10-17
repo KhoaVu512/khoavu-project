@@ -29,7 +29,9 @@
 
 .heart-bg:hover {
   background: rgba(255, 192, 200, 0.7);
+  background-position:right;
 }
+
 
 .likes-amount {
   font-size: 14px;

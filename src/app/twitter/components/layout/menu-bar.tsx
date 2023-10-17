@@ -3,6 +3,11 @@ import ButtonLogo from '@/app/twitter/components/ui/button-logo'
 import HomeIcon from '@/assets/icon/home-icon.svg'
 import SearchIcon from '@/assets/icon/search-icon.svg'
 import LogoTwitter from '@/assets/icon/twitter.svg'
+import NotificationIcon from '@/assets/icon/notification-icon.svg'
+import MailOutlineTwoToneIcon from '@mui/icons-material/MailOutlineTwoTone';
+import TurnedInNotTwoToneIcon from '@mui/icons-material/TurnedInNotTwoTone';
+import PersonTwoToneIcon from '@mui/icons-material/PersonTwoTone';
+import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 
 function MainHeader() {
   return (
@@ -29,37 +34,37 @@ function MainHeader() {
           link="/"
           content="Notifications"
         >
-          <SearchIcon />
+          <NotificationIcon />
         </ButtonHeader>
         <ButtonHeader
           link="/"
           content="Messages"
         >
-          <SearchIcon />
+          <MailOutlineTwoToneIcon sx={{fontSize: 30}}/>
         </ButtonHeader>
         <ButtonHeader
           link="/"
           content="Bookmarks"
         >
-          <SearchIcon />
+          <TurnedInNotTwoToneIcon sx={{fontSize: 32}}/>
         </ButtonHeader>
         <ButtonHeader
           link="/"
           content="Communities"
         >
-          <SearchIcon />
+          <PeopleAltOutlinedIcon sx={{fontSize: 32}}/>
         </ButtonHeader>
         <ButtonHeader
           link="/"
           content="XPremium"
         >
-          <SearchIcon />
+           <LogoTwitter />
         </ButtonHeader>
         <ButtonHeader
           link="/"
           content="Profile"
         >
-          <SearchIcon />
+          <PersonTwoToneIcon sx={{fontSize: 32}}/>
         </ButtonHeader>
       </div>
     </div>
