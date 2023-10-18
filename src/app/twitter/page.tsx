@@ -1,3 +1,4 @@
+'use client'
 import FeedPage from '@/app/twitter/feed/page'
 import Trending from '@/app/twitter/components/layout/trending'
 
