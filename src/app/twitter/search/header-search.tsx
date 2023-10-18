@@ -13,7 +13,7 @@ function HeaderSearch() {
         </div>
       </div>
       <div className="flex justify-around pt-2  border-b-[1px]">
-        <div className="text-[20px] font-semibold text-[#76747B] border-b-[4px] border-blue-300 pb-2">Top</div>
+        <div className="text-[20px] font-semibold text-[#76747B] border-b-[4px] border-blue-300 pb-2 box-border w-[30px]">Top</div>
         <div className="text-[20px] font-semibold text-[#76747B]">Top</div>
         <div className="text-[20px] font-semibold text-[#76747B]">Top</div>
         <div className="text-[20px] font-semibold text-[#76747B]">Top</div>
