@@ -18,9 +18,13 @@ function ContentPost() {
         alt={'avatar user'}
         className="w-[95%] mt-6 rounded-2xl"
       />
-      <div className='flex mt-2'>
+      <div className="flex mt-2">
         <div className="text-[#74767B] ">{dateFormat}</div>
-        <div> <span> &ensp; . </span> 3232 <span className='text-[#74767B]'>&ensp;views</span></div>
+        <div>
+          {' '}
+          <span> &ensp; . </span> 3232{' '}
+          <span className="text-[#74767B]">&ensp;views</span>
+        </div>
       </div>
     </div>
   )

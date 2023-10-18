@@ -19,9 +19,10 @@ function Like() {
 
   return (
     <div className="like-app">
-      <div className="heart-bg">
+      <div className={`heart-bg`}>
         <div
           className={`heart-icon ${liked ? 'liked' : ''}`}
+          
           onClick={toggleDisplay}
         ></div>
       </div>

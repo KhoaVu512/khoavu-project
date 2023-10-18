@@ -17,8 +17,8 @@ function ReplyPost() {
           />
         </div>
       </div>
-      <div className='mr-4  flex items-center '>
-        <button className=' bg-blue-600 px-4 py-2 rounded-2xl'>Reply</button>
+      <div className="mr-4  flex items-center ">
+        <button className=" bg-blue-600 px-4 py-2 rounded-2xl">Reply</button>
       </div>
     </div>
   )

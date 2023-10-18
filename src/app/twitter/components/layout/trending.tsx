@@ -7,8 +7,8 @@ function MainTrending() {
   return (
     <div className="relative">
       <div className="flex w-[350px] ml-[40px] flex-col fixed">
-        <SearchInput />
-        <Trending />
+        <SearchInput widthInput={'350px'}/>
+        <Trending background='#202327'/>
         <WhoFollow />
       </div>
     </div>

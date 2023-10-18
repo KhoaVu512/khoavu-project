@@ -1,9 +1,13 @@
 import { PropsWithChildren } from 'react'
 import SearchSmall from 'assets/icon/search-small.svg'
 
-function SearchInput(props: PropsWithChildren) {
+interface Props {
+  widthInput: string
+}
+
+function SearchInput(Props: PropsWithChildren<Props>) {
   return (
-    <div className="flex w-[350px] h-[40px] mt-2 bg-[#202327] rounded-full focus:border-blue-600 focus:border-[2px]">
+    <div className={`flex w-[${Props.widthInput}] h-[40px] mt-2 bg-[#202327] rounded-full focus:border-blue-600 focus:border-[2px]`}>
       <div className="flex ml-4 items-center">
         <SearchSmall />{' '}
       </div>

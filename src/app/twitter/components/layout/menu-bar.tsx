@@ -13,13 +13,13 @@ function MainHeader() {
   return (
     <div className='fixed'>
       <div className="w-[52px] h-[52px] mt-[3px]">
-        <ButtonLogo link="/">
+        <ButtonLogo link="/twitter">
           <LogoTwitter />
         </ButtonLogo>
       </div>
       <div>
         <ButtonHeader
-          link="/"
+          link="/twitter"
           content="Home"
         >
           <HomeIcon />
