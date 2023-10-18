@@ -25,7 +25,7 @@ function MainHeader() {
           <HomeIcon />
         </ButtonHeader>
         <ButtonHeader
-          link="/"
+          link="/twitter/explore"
           content="Explore"
         >
           <SearchIcon />

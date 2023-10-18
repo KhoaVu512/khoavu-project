@@ -1,4 +1,5 @@
 import SettingIcon from '@/assets/icon/setting-icon.svg'
+import Link from 'next/link'
 
 interface Props {
   tab: string
@@ -8,6 +9,7 @@ interface Props {
 
 function TrendingItem(Props: Props) {
   return (
+    <Link href={'/twitter/search'}>
     <div className="hover:bg-gray-800">
       <div className="h-[full] mx-6 my-2 py-2 flex justify-between ">
         <div className="flex flex-col">
@@ -22,6 +24,8 @@ function TrendingItem(Props: Props) {
         </div>
       </div>
     </div>
+    </Link>
+    
   )
 }
 
