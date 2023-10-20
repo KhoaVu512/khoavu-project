@@ -6,6 +6,7 @@ function PostPage() {
     <div className="flex w-[990px] relative">
       <ContainerPost />
       <Trending />
+      
     </div>
   )
 }

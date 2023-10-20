@@ -1,4 +1,4 @@
-import ToolBar from '@/app/twitter/feed/tool-bar-feed'
+import ToolBar from '@/app/twitter/components/element-post/tool-bar-feed'
 
 function CommentPost() {
   return (
@@ -27,7 +27,7 @@ function CommentPost() {
           </div>
         </div>
       </div>
-        <ToolBar />
+      <ToolBar />
     </div>
   )
 }

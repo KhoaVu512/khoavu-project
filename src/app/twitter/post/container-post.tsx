@@ -1,6 +1,6 @@
 'use client'
 import ProfilePost from '@/app/twitter/components/element-post/profile-post'
-import ToolBarPost from './tool-bar-post'
+import ToolBarPost from '../components/element-post/tool-bar-post'
 import ContentPost from '@/app/twitter/post/content-post'
 import HeaderPost from './header-post'
 import ReplyPost from '@/app/twitter/post/reply-post'

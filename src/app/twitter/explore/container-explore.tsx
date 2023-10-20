@@ -1,8 +1,8 @@
 'use client'
+import ToolBar from '@/app/twitter/components/element-post/tool-bar-feed'
 import SearchInput from '@/app/twitter/components/ui/search-input'
 import TrendsExplore from '@/app/twitter/explore/trends-explore'
 import Pots from '@/app/twitter/feed/post'
-import ToolBar from '@/app/twitter/feed/tool-bar-feed'
 import ContactSupportRoundedIcon from '@mui/icons-material/ContactSupportRounded'
 import { blue } from '@mui/material/colors'
 
