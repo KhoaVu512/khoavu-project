@@ -8,9 +8,11 @@ function PostList(Props: any) {
   return (
     <div>
       {items.map((event: any) => (
-        <div className='hover:bg-gray-900 pt-4 pb-4  border-b-[1px] border-[#2f3336]'>
+        <div
+          key={event.id}
+          className="hover:bg-gray-900 pt-4 pb-4  border-b-[1px] border-[#2f3336]"
+        >
           <PostItem
-            key={event.id}
             id={event.id}
             content={event.content}
             image={event.image}
