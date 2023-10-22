@@ -1,12 +1,15 @@
 'use client'
 import ToolBar from '@/app/twitter/components/element-post/tool-bar-feed'
+import PostList from '@/app/twitter/components/feed/post-list'
 import SearchInput from '@/app/twitter/components/ui/search-input'
 import TrendsExplore from '@/app/twitter/explore/trends-explore'
-import Pots from '@/app/twitter/feed/post'
 import ContactSupportRoundedIcon from '@mui/icons-material/ContactSupportRounded'
 import { blue } from '@mui/material/colors'
+import { getAllEvents } from '../../../../dummy-data'
 
 function ContainerExplore() {
+  const events = getAllEvents()
+
   return (
     <div>
       <div className="w-[598px] border-[#2f3336] border-[1px]">
@@ -23,7 +26,7 @@ function ContainerExplore() {
             </div>
             <div className="text-[20px] font-bold">Pedri</div>
           </div>
-          <Pots />
+          <PostList posts={events}/>
           <ToolBar />
         </div>
       </div>

@@ -1,16 +1,18 @@
+import PostList from '@/app/twitter/components/feed/post-list'
 import SearchInput from '@/app/twitter/components/ui/search-input'
-import Pots from '@/app/twitter/feed/post'
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined'
 import { useRouter } from 'next/navigation'
+import { getAllEvents } from '../../../../dummy-data'
 
 function HeaderSearch() {
   const router = useRouter()
+  const events = getAllEvents()
 
   return (
     <div>
       <div className="flex">
         <div className="flex justify-center items-center rounded-full m-2 w-[35px] h-[35px] hover:bg-gray-800 ">
-          <button onClick={() => router.back()}>
+          <button onClick={() => router.back()} className='p-2'>
             <ArrowBackOutlinedIcon fontSize="small" />
           </button>
         </div>
@@ -28,7 +30,7 @@ function HeaderSearch() {
         <div className="text-[18px] font-semibold text-[#76747B]">Lists</div>
       </div>
       <div className=" border-b-[1px] border-[#2f3336]">
-        <Pots />
+        <PostList posts={events}/>
       </div>
     </div>
   )

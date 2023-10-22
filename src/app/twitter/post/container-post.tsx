@@ -1,10 +1,10 @@
 'use client'
 import ProfilePost from '@/app/twitter/components/element-post/profile-post'
-import ToolBarPost from '../components/element-post/tool-bar-post'
-import ContentPost from '@/app/twitter/post/content-post'
-import HeaderPost from './header-post'
-import ReplyPost from '@/app/twitter/post/reply-post'
 import CommentPost from '@/app/twitter/post/comment-post'
+import ContentPost from '@/app/twitter/post/content-post'
+import ReplyPost from '@/app/twitter/post/reply-post'
+import ToolBarPost from '../components/element-post/tool-bar-post'
+import HeaderPost from './header-post'
 
 function ContainerPost() {
   return (

@@ -2,24 +2,28 @@ import PostItem from '@/app/twitter/components/feed/post-item'
 import { Post } from '@/app/twitter/components/types'
 import ToolBarFeed from '@/app/twitter/components/element-post/tool-bar-feed'
 
-function PostList(Props: any) {
-  const { items } = Props
+type Props = {
+  posts: Post[]
+}
+
+function PostList(props: Props) {
+  const { posts } = props
 
   return (
     <div>
-      {items.map((event: any) => (
+      {posts.map((post) => (
         <div
-          key={event.id}
+          key={post.id}
           className="hover:bg-gray-900 pt-4 pb-4  border-b-[1px] border-[#2f3336]"
         >
           <PostItem
-            id={event.id}
-            content={event.content}
-            image={event.image}
-            name={event.name}
-            time={event.time}
-            nameId={event.nameId}
-            like={event.like}
+            id={post.id}
+            content={post.content}
+            image={post.image}
+            name={post.name}
+            time={post.time}
+            nameId={post.nameId}
+            like={post.like}
           />
           <ToolBarFeed />
         </div>
