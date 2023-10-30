@@ -10,6 +10,8 @@ interface Props {
   widthInput: string
 }
 
+const options = ['Option 1', 'Option 2']
+
 function SearchInput(Props: PropsWithChildren<Props>) {
   const searchInput = useMemo(
     () => (
@@ -30,15 +32,43 @@ function SearchInput(Props: PropsWithChildren<Props>) {
         <SearchSmall />{' '}
       </div>
 
-      <div className="w-full h-full flex justify-center items-center bg-[rgb(22, 24, 28]">
+      {/* <div className="w-full h-full flex justify-center items-center bg-[rgb(22, 24, 28]">
       <input
         type="text"
         className=" w-full bg-[#202327] ml-6 mr-4 focus:outline-none"
         placeholder="Search"
         autoComplete='123123'
       />
+      </div> */}
+      <div className="w-full h-full flex justify-center items-center bg-transparent mx-2 text-[white]">
+        <Autocomplete
+          fullWidth
+          sx={{
+            display: 'inline-block',
+            border: 'none',
+            color: '#FFFFFF',
+            '& input': {
+              width: '100%',
+              height: '36px',
+              bgcolor: 'transparent',
+              outline: 'none',
+
+              border: 'none',
+            },
+          }}
+          id="custom-input-demo"
+          options={options}
+          renderInput={(params) => (
+            <div ref={params.InputProps.ref}>
+              <input
+                type="text"
+                {...params.inputProps}
+              />
+            </div>
+          )}
+        />
+        {''}
       </div>
-     
     </label>
   )
 }

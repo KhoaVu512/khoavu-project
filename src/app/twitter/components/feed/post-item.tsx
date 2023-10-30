@@ -5,7 +5,7 @@ function PostItem(Props: Post) {
   return (
     <div>
       <Link
-        href={'/twitter/post'}
+        href={`/twitter/post/${Props.id}`}
         className="hover:bg-gray-900"
       >
         <div className="">
@@ -29,7 +29,7 @@ function PostItem(Props: Post) {
               <img
                 src={Props.image}
                 alt={'avatar user'}
-                className="w-[95%] mt-6 rounded-2xl"
+                className="w-[95%] max-h-[502px]   mt-6 rounded-2xl"
               />
             </div>
           </div>

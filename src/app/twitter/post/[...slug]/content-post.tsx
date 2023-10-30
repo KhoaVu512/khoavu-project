@@ -1,4 +1,6 @@
-function ContentPost() {
+import { Post } from '@/app/twitter/components/types'
+
+function ContentPost(props: Post) {
   let timeStamp = Date.now()
   let date = new Date(timeStamp)
   let dateFormat =
@@ -7,15 +9,12 @@ function ContentPost() {
   return (
     <div className="w-full flex mt-4 mb-4 mx-4 flex-col">
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        voluptatibus facilis, sapiente similique incidunt officia voluptatem
-        provident porro ullam quidem velit dolorum rem impedit officiis quasi
-        quisquam dignissimos quam nobis?
+       {props.content}
       </div>
 
       <img
-        src="/images/avatar-demo1.png"
-        alt={'avatar user'}
+        src={props.image}
+        alt={`avatar of + ${props.name}`}
         className="w-[95%] mt-6 rounded-2xl"
       />
       <div className="flex mt-2">

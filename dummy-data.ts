@@ -70,3 +70,7 @@ const DUMMY_EVENTS = [
 export function getAllEvents() {
   return DUMMY_EVENTS
 }
+
+export function getEventWithId(id:string) {
+  return DUMMY_EVENTS.filter(item => item.id === `${id}`)
+}
