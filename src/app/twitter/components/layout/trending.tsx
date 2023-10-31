@@ -6,10 +6,16 @@ import WhoFollow from '@/app/twitter/components/ui/who-follow'
 function MainTrending() {
   return (
     <div className="relative">
-      <div className="flex w-[350px] ml-[40px] flex-col fixed">
-        <SearchInput widthInput={'350px'}/>
-        <Trending background='#202327'/>
-        <WhoFollow />
+      <div className="flex w-[350px] ml-[40px] fixed flex-col overflow-auto hover:overflow-y-scroll">
+        <div className="w-full ">
+          <SearchInput widthInput={'350px'} />
+        </div>
+        <div className="">
+          <div className="">
+            <Trending background="#202327" />
+            <WhoFollow />
+          </div>
+        </div>
       </div>
     </div>
   )

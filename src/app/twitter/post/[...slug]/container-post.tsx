@@ -15,7 +15,7 @@ function ContainerPost(props: Props) {
   const { postDetails } = props
 
   return (
-    <div className="w-[598px] border-[#2f3336] border-[1px] h-screen">
+    <div className="w-[598px]  border-[#2f3336] border-[1px] h-full">
       <HeaderPost />
       {postDetails.map((postDetail) => (
         <div key={postDetail.id}>

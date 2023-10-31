@@ -6,7 +6,7 @@ interface Props {
 
 function Trending(Props:Props) {
   return (
-    <div className={`w-full bg-[${Props.background}]  my-6 rounded-2xl hover:bg-light-600 hover:cursor-pointer  `}>
+    <div className={`w-full bg-[${Props.background}]  my-6 rounded-2xl hover:bg-light-600 hover:cursor-pointer `}>
       <div className="mx-6 my-2 text-[20px] font-extrabold">Trends for you</div>
       <TrendingItem
         tab="Trending in VietNam"
