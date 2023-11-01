@@ -10,6 +10,13 @@ import CloseIcon from '@mui/icons-material/Close'
 import CommentIcon from '@/assets/icon/comment-icon.svg'
 import { Popover, Typography } from '@mui/material'
 import { useState } from 'react'
+import ImageIcon from '@mui/icons-material/Image'
+import GifBoxIcon from '@mui/icons-material/GifBox'
+import ListIcon from '@mui/icons-material/List'
+import SentimentSatisfiedIcon from '@mui/icons-material/SentimentSatisfied'
+import PendingActionsIcon from '@mui/icons-material/PendingActions'
+import LocationOnIcon from '@mui/icons-material/LocationOn'
+import { blue } from '@mui/material/colors'
 
 interface Props {
   openDialog: boolean
@@ -26,6 +33,8 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogActions-root': {
     padding: theme.spacing(1),
   },
+  border: '1px',
+  borderRadius: '16px',
 }))
 
 export default function CustomizedDialogs(props: Props) {
@@ -57,86 +66,136 @@ export default function CustomizedDialogs(props: Props) {
         </div>
       </button>
 
-      <BootstrapDialog
-        onClose={handleClose}
-        aria-labelledby="customized-dialog-title"
-        open={open}
-        sx={{
-          borderColor: 'white',
-          backgroundColor: 'rgba(91, 112, 131, 0.4)',
-        }}
-      >
-        <div className="flex bg-black px-3 pb-2 border-b-[1px]">
-          <IconButton
-            aria-label="close"
-            onClick={handleClose}
-            sx={{
-              position: '',
-              right: 8,
-              top: 8,
-              // color: (theme) => theme.palette.white[500],
-              color: 'white',
-            }}
-          >
-            <CloseIcon />
-          </IconButton>
-        </div>
-        <div className="bg-black text-white">
-          <DialogContent dividers>
-            <div className="w-[550px]">
-              <div className="flex">
-                <div className="flex flex-col rounded-full px-2 py-1   w-[calc(100% - 4px)] h-[calc(100% - 4px)] mr-4">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1696879451716-935355900aad?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
-                    alt={`avatar`}
-                    className="w-[42px] h-[40px] rounded-full"
-                  />
-                  {/* <div className=' '>
-                    <hr className='w-[100%] h-[] rotate-90 mt-6 '/>
-                  </div> */}
-                </div>
-                <div className="flex flex-col  w-[500px]">
-                  <div className="flex mb-1">
-                    <div className=" font-bold  ">Khoa Vu</div>
-                    <div className="ml-2 text-[#74767B]">22m</div>
-                  </div>
-                  <div className="text-[15px]">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reprehenderit repudiandae in quos enim rem earum. Incidunt
-                    debitis magni voluptates, illum aspernatur ad voluptate
-                    voluptas aliquid officiis consequatur necessitatibus unde
-                    laudantium?
-                  </div>
-                </div>
-              </div>
-              <div className="w-[550px] mt-2">
-                <div className="flex">
-                  <img
-                    src="https://plus.unsplash.com/premium_photo-1696879451716-935355900aad?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
-                    alt={`avatar`}
-                    className="w-[42px] h-[40px] rounded-full"
-                  />
-                  <input
-                    type="text"
-                    className="bg-transparent outline-none w-[500px] ml-4 p-3"
-                    placeholder="Reply"
-                  />
-                </div>
-              </div>
-            </div>
-          </DialogContent>
-        </div>
-        <div className="bg-black">
-          <DialogActions>
-            <Button
-              autoFocus
+      <div>
+        <BootstrapDialog
+          onClose={handleClose}
+          aria-labelledby="customized-dialog-title"
+          open={open}
+          sx={{
+            backgroundColor: 'rgba(91, 112, 131, 0.4)',
+            border: '1px',
+            borderRadius: '16px',
+          }}
+        >
+          <div className="flex bg-black px-3 pb-2 ">
+            <IconButton
+              aria-label="close"
               onClick={handleClose}
+              sx={{
+                position: '',
+                right: 8,
+                top: 8,
+                // color: (theme) => theme.palette.white[500],
+                color: 'white',
+              }}
+              style={{
+                borderRadius: '16px',
+              }}
             >
-              Save changes
-            </Button>
-          </DialogActions>
-        </div>
-      </BootstrapDialog>
+              <CloseIcon />
+            </IconButton>
+          </div>
+          <div className="bg-black text-white ">
+            <DialogContent dividers>
+              <div className="w-[550px]">
+                <div className="flex">
+                  <div className="flex flex-col rounded-full px-2 py-1   w-[calc(100% - 4px)] h-[calc(100% - 4px)] mr-4">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1696879451716-935355900aad?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+                      alt={`avatar`}
+                      className="w-[42px] h-[40px] rounded-full"
+                    />
+                    {/* <div className=" ">
+                      <hr className="w-full  rotate-90 mt-6 " />
+                    </div> */}
+                  </div>
+                  <div className="flex flex-col  w-[500px]">
+                    <div className="flex mb-1">
+                      <div className=" font-bold  ">Khoa Vu</div>
+                      <div className="ml-2 text-[#74767B]">22m</div>
+                    </div>
+                    <div className="text-[15px]">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Reprehenderit repudiandae in quos enim rem earum. Incidunt
+                      debitis magni voluptates, illum aspernatur ad voluptate
+                      voluptas aliquid officiis consequatur necessitatibus unde
+                      laudantium?
+                    </div>
+                    <div>
+                      post to{' '}
+                      <span className="text-blue-500">@khoavu@5121</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-[550px] mt-4 ">
+                  <div className="flex">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1696879451716-935355900aad?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+                      alt={`avatar`}
+                      className="w-[42px] h-[40px] rounded-full"
+                    />
+                    <textarea
+                      className="bg-transparent outline-none w-[500px] ml-4 p-3 text-[18px] resize-none"
+                      placeholder="Reply"
+                    />
+                  </div>
+                </div>
+              </div>
+            </DialogContent>
+          </div>
+          <div className="bg-black">
+            <DialogActions>
+              <div className="flex justify-between w-full">
+                <div className="mt-4 flex w-[40%] justify-between">
+                  <div>
+                    <ImageIcon
+                      fontSize="small"
+                      sx={{ color: blue[500] }}
+                    />
+                  </div>
+                  <div>
+                    <GifBoxIcon
+                      fontSize="small"
+                      sx={{ color: blue[500] }}
+                    />
+                  </div>
+                  <div>
+                    <ListIcon
+                      fontSize="small"
+                      sx={{ color: blue[500] }}
+                    />
+                  </div>
+                  <div>
+                    <SentimentSatisfiedIcon
+                      fontSize="small"
+                      sx={{ color: blue[500] }}
+                    />
+                  </div>
+                  <div>
+                    <PendingActionsIcon
+                      fontSize="small"
+                      sx={{ color: blue[500] }}
+                    />
+                  </div>
+                  <div>
+                    <LocationOnIcon
+                      fontSize="small"
+                      sx={{ color: blue[500] }}
+                    />
+                  </div>
+                </div>
+              </div>
+              <button
+                autoFocus
+                onClick={handleClose}
+                className=" px-4 py-2 my-2 rounded-2xl bg-blue-600 mr-4 text-white mt-4"
+              >
+                Reply
+              </button>
+            </DialogActions>
+          </div>
+        </BootstrapDialog>
+      </div>
     </div>
   )
 }

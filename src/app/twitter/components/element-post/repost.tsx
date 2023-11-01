@@ -5,6 +5,7 @@ import { Popover, Typography } from '@mui/material'
 import { useState } from 'react'
 
 
+
 interface Props {
   width: number
   height: number,
@@ -43,8 +44,8 @@ function RePost(Props: Props) {
         }}
       >
         <div className=" bg-black w-24 h-16 justify-center flex flex-col items-center">
-          <div className="text-white">Repost</div>
-          <div className="text-white">quote</div>
+          <div className="text-white py-2 font-semibold">Repost</div>
+          <div className="text-white py-2 font-semibold">Quote</div>
         </div>
       </Popover>
 
