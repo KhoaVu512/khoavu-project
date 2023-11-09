@@ -39,7 +39,7 @@ function NewPost(props: Props) {
                 type="text"
                 className="border-none bg-transparent outline-none w-[90%] text-[20px]"
                 placeholder="What is happening?!"
-                onChange={() => {
+                onChange={(event) => {
                   setContent({ ...content, name: (event.target as HTMLInputElement).value })
                 }}
               />
