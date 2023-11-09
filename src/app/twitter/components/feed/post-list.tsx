@@ -8,7 +8,7 @@ type Props = {
 
 function PostList(props: Props) {
   const { posts } = props
-
+  
   return (
     <div>
       {posts.map((post) => (
@@ -24,6 +24,7 @@ function PostList(props: Props) {
             time={post.time}
             nameId={post.nameId}
             like={post.like}
+            created_at={post.created_at}
           />
           <ToolBarFeed />
         </div>

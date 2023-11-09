@@ -6,4 +6,5 @@ export interface Post {
   content: string
   image: string
   like: number
+  created_at: number
 }

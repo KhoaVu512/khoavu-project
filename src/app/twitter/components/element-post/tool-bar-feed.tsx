@@ -1,7 +1,7 @@
 import CommentPost from '@/app/twitter/components/element-post/comment-post'
 import Like from '@/app/twitter/components/element-post/like'
 import RePost from '@/app/twitter/components/element-post/repost'
-
+import ChartView from '@/app/twitter/components/element-post/chart-view'
 function ToolBar() {
   return (
     <div className="ml-[72px] mr-12">
@@ -17,7 +17,7 @@ function ToolBar() {
           textSize={13}
         />
         <Like />
-        <RePost
+        <ChartView
           width={16}
           height={18}
           textSize={13}

@@ -11,7 +11,7 @@ import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 
 function MainHeader() {
   return (
-    <div className='fixed overflow-y-scroll'>
+    <div className='fixed '>
       <div className="w-[52px] h-[52px] mt-[3px]">
         <ButtonLogo link="/twitter">
           <LogoTwitter />
