@@ -19,8 +19,8 @@ function FeedPage() {
         setLoading(false)
       })
   }, [])
-  const getData = data.data?.map((val) => val)
-  console.log(getData)
+  // const getData = data.data?.map((val) => val)
+  // console.log(getData)
 
   return (
     <div className="w-[598px] h-full  flex border-[#2f3336] border-[1px]">

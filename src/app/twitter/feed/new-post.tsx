@@ -1,9 +1,7 @@
 import MenuPost from '@/app/twitter/components/element-post/menu-post'
 import { FormEvent, useRef, useState } from 'react'
 
-interface Props {
-
-}
+interface Props {}
 
 function NewPost(props: Props) {
   const [content, setContent] = useState({
@@ -40,7 +38,7 @@ function NewPost(props: Props) {
                 className="border-none bg-transparent outline-none w-[90%] text-[20px]"
                 placeholder="What is happening?!"
                 onChange={(event) => {
-                  setContent({ ...content, name: (event.target as HTMLInputElement).value })
+                  setContent({ ...content, name: event.target.value })
                 }}
               />
             </div>

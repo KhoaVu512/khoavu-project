@@ -19,8 +19,8 @@ function ContainerPost(props: Props) {
       <HeaderPost />
       {postDetails.map((postDetail) => (
         <div key={postDetail.id}>
-          <ProfilePost image={postDetail.image} name={postDetail.name} nameId={postDetail.nameId} id={''} time={0} content={''} like={0}/>
-          <ContentPost image={postDetail.image} name={postDetail.name} content={postDetail.content} id={''} nameId={''} time={0} like={0} />
+          <ProfilePost created_at={0} image={postDetail.image} name={postDetail.name} nameId={postDetail.nameId} id={''} time={0} content={''} like={0}/>
+          <ContentPost created_at={0} image={postDetail.image} name={postDetail.name} content={postDetail.content} id={''} nameId={''} time={0} like={0} />
         </div>
       ))}
 
