@@ -26,7 +26,7 @@ function ContainerExplore() {
             </div>
             <div className="text-[20px] font-bold">Pedri</div>
           </div>
-          <PostList posts={events}/>
+          <PostList posts={events} />
           <ToolBar />
         </div>
       </div>

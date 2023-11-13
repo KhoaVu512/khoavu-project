@@ -1,27 +1,57 @@
 'use client'
-import MenuFeed from '@/app/twitter/feed/menu'
-import ToolBarFeed from '../components/element-post/tool-bar-feed'
-import NewPost from './new-post'
-import { getAllEvents } from '../../../../dummy-data'
 import PostList from '@/app/twitter/components/feed/post-list'
-import { useEffect, useState } from 'react'
+import { Post } from '@/app/twitter/components/types'
+import MenuFeed from '@/app/twitter/feed/menu'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { getAllEvents } from '../../../../dummy-data'
+import NewPost from './new-post'
 
 function FeedPage() {
   const events = getAllEvents()
-  const [data, setData] = useState<[]>([])
+  const [posts, setPosts] = useState<Post[]>([])
   const [isLoading, setLoading] = useState(true)
-
+  console.log('RENDERING')
   useEffect(() => {
     fetch('/api/task/list')
       .then((res) => res.json())
-      .then((data) => {
-        setData(data)
+      .then((json) => {
+        console.log(json)
+        setPosts(json.data)
         setLoading(false)
       })
+    console.log('MOUNTED')
   }, [])
-  // const getData = data.data?.map((val) => val)
-  // console.log(getData)
 
+  const count = 3
+
+  const a = [
+    {
+      name: 'khoa',
+    },
+    {
+      name: 'khoa',
+    },
+    {
+      name: 'khoa',
+    },
+    {
+      name: 'khoa',
+    },
+    {
+      name: 'khoa',
+    },
+  ]
+  let b = []
+
+  for (let i = 0; i < a.length; i++) {
+    if (i % 2 === 0) {
+      b.push({ ...a[i], count })
+    } else {
+      b.push({ ...a[i] })
+    }
+  }
+
+  console.log(b)
   return (
     <div className="w-[598px] h-full  flex border-[#2f3336] border-[1px]">
       <div className="relative ">
@@ -34,7 +64,7 @@ function FeedPage() {
           <NewPost />
         </div>
         <div>
-          <PostList posts={events}></PostList>
+          <PostList posts={posts}></PostList>
         </div>
       </div>
     </div>

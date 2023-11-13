@@ -7,7 +7,6 @@ import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined'
 import { getAllEvents } from '../../../../dummy-data'
 
 function ContainerProfile() {
-
   const events = getAllEvents()
   return (
     <div className="w-[598px] border-[#2f3336] border-[1px] h-full">
@@ -53,23 +52,23 @@ function ContainerProfile() {
             <div>
               233 <span className="text-[#71767B]">Following</span>
             </div>
-            <div className='mx-2'>
+            <div className="mx-2">
               1133 <span className="text-[#71767B]">Followers</span>
             </div>
           </div>
         </div>
 
         <div className="flex justify-around pt-2  border-b-[1px] border-[#2f3336]">
-        <div className=" flex justify-center text-[18px] font-semibold text-white border-b-[4px] border-blue-300 pb-2 w-[60px] transform translate rounded-[3px]">
-          Posts
+          <div className=" flex justify-center text-[18px] font-semibold text-white border-b-[4px] border-blue-300 pb-2 w-[60px] transform translate rounded-[3px]">
+            Posts
+          </div>
+          <div className="text-[18px] font-semibold text-[#76747B]">Latest</div>
+          <div className="text-[18px] font-semibold text-[#76747B]">People</div>
+          <div className="text-[18px] font-semibold text-[#76747B]">Media</div>
         </div>
-        <div className="text-[18px] font-semibold text-[#76747B]">Latest</div>
-        <div className="text-[18px] font-semibold text-[#76747B]">People</div>
-        <div className="text-[18px] font-semibold text-[#76747B]">Media</div>
-      </div>
-      <div className=" border-b-[1px] border-[#2f3336]">
-        <PostList posts={events}/>
-      </div>
+        <div className=" border-b-[1px] border-[#2f3336]">
+          <PostList posts={events} />
+        </div>
       </div>
     </div>
   )

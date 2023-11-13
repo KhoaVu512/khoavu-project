@@ -12,7 +12,10 @@ function HeaderSearch() {
     <div>
       <div className="flex">
         <div className="flex justify-center items-center rounded-full m-2 w-[35px] h-[35px] hover:bg-gray-800 ">
-          <button onClick={() => router.back()} className='p-2'>
+          <button
+            onClick={() => router.back()}
+            className="p-2"
+          >
             <ArrowBackOutlinedIcon fontSize="small" />
           </button>
         </div>
@@ -30,7 +33,7 @@ function HeaderSearch() {
         <div className="text-[18px] font-semibold text-[#76747B]">Lists</div>
       </div>
       <div className=" border-b-[1px] border-[#2f3336]">
-        <PostList posts={events}/>
+        <PostList posts={events} />
       </div>
     </div>
   )

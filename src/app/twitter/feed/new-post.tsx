@@ -20,6 +20,7 @@ function NewPost(props: Props) {
     }).then((res) => res.json())
   }
 
+
   return (
     <div className="w-full">
       <form onSubmit={onSubmit}>
